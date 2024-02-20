@@ -65,5 +65,11 @@ Replace /path/to/model_checkpoint and /path/to/test.csv with the appropriate pat
 
 5.**Change Experiments Set-up**:For easy interaction, config.json has many variables that control the model setup.
 
+## Specific Evaluation with Phoneme Error Rate (PER), MDD F1-score, Precision, and Recall
+
+To perform a specific evaluation with Phoneme Error Rate (PER), MDD F1-score, Precision, and Recall, navigate to the directory `./scoring_mdd_f1`. We used KALDI for phoneme alignment, and the corresponding F1-score, Precision, and Recall are reported in the paper.
+
+To install KALDI, please follow the guidelines available at [KALDI GitHub Repository](https://github.com/kaldi-asr/kaldi).
+
 
 
