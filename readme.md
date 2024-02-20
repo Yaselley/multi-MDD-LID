@@ -21,6 +21,36 @@ Installation
 pip install -r requirements.txt
 ```
 
+
+## Folder Structure
+
+```plaintext
+.
+├── data
+│   ├── train.csv
+│   ├── eval.csv
+│   └── test.csv
+├── create_dict_vocab.py
+├── tokenizer_extractor.py
+├── datacollator.py
+├── mvModel.py
+├── mvTrainer.py
+├── result.py
+├── main.py
+├── requirements.txt
+└── README.md
+
+
+The `data` folder should contain three CSV files:
+
+**train/test/eval.csv**
+
+   - Columns:
+     - `path`: Path to the audio WAV file.
+     - `ref_ref`: Reference phoneme sequence.
+     - `ref_anno`: Annotated phoneme reference sequence.
+
+
 3.**Training The model:**
 ```
 python3 main_train.py --config=config.json
@@ -32,6 +62,8 @@ python3 main_test.py --model_checkpoint=/path/to/model_checkpoint --test_csv=/pa
 ```
 Replace /path/to/model_checkpoint and /path/to/test.csv with the appropriate paths.
 
-5.**Change Experiments Set-up**
-For easy interaction, config.json has many variables that control the model setup.
+5.**Change Experiments Set-up**:For easy interaction, config.json has many variables that control the model setup.
+
+6.**Data Structure**:
+
 
