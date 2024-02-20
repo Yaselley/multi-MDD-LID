@@ -17,7 +17,8 @@ Installation
 
 2.**Install Requirements:**
 
-```pip install -r requirements.txt
+```
+pip install -r requirements.txt
 ```
 
 3.**Training The model:**
