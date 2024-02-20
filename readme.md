@@ -39,8 +39,9 @@ pip install -r requirements.txt
 ├── main.py
 ├── requirements.txt
 └── README.md
+```
 
-
+## data Folder
 The `data` folder should contain three CSV files:
 
 **train/test/eval.csv**
@@ -64,6 +65,5 @@ Replace /path/to/model_checkpoint and /path/to/test.csv with the appropriate pat
 
 5.**Change Experiments Set-up**:For easy interaction, config.json has many variables that control the model setup.
 
-6.**Data Structure**:
 
 
