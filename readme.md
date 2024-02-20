@@ -5,6 +5,7 @@
 L1-MultiMDD, enriched with L1-aware speech representation. An end-to-end speech encoder is trained on the input signal and corresponding reference phoneme sequence. First, an attention mechanism is deployed to align the input audio with the reference phoneme sequence. Afterward, the L1-L2-speech embedding is extracted from an auxiliary model, pretrained in a multi-task setup identifying L1 and L2 language, and infused with the primary network. Finally, the L1-MultiMDD is optimized for a unified multilingual phoneme recognition task using connectionist temporal classification (CTC) loss for the target languages: English, Arabic, and Mandarin.
 
 For the current implementation, only the simple LID (language one-hot embedding) is proposed
+The original paper [Paper Accepted in ICASSP 2024](https://arxiv.org/pdf/2309.07719.pdf).
 
 Installation
 
