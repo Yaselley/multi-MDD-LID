@@ -31,14 +31,16 @@ pip install -r requirements/requirements.txt
 │   ├── train.csv
 │   ├── eval.csv
 │   └── test.csv
-├── create_dict_vocab.py
-├── tokenizer_extractor.py
-├── datacollator.py
-├── mvModel.py
-├── mvTrainer.py
-├── result.py
+├── modeling
+│   ├── create_dict_vocab.py -- (create vocab.json from train/eval .csv)
+│   ├── tokenizer_extractor.py -- (uses vocab.json to create a tokenizer with PAD, UNK, SIL)
+│   ├── datacollator.py -- (handles data packaging, padding)
+│   ├── mvModel.py -- (Intra-Alignment Reference Text with Speech Units model)
+│   ├── mvTrainer.py -- (Training functions (loss, metrics))
+│   ├── result.py 
 ├── main.py
-├── requirements.txt
+│   reuirements
+│   ├── requirements.txt
 └── README.md
 ```
 
